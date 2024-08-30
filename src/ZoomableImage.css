@@ -1,0 +1,25 @@
+/* src/ZoomableImage.css */
+.zoomable-image-container {
+  overflow: visible; /* Cho phép hình ảnh vượt ra ngoài giới hạn thành phần cha */
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  display: inline-block; /* Đảm bảo các ảnh hiển thị theo hàng ngang */
+  position: relative; /* Đặt vị trí tương đối để xử lý phóng to */
+}
+
+.zoomable-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  z-index: 1; /* Đặt z-index thấp để hình ảnh không nằm trên các phần tử khác khi chưa phóng to */
+}
+
+.zoomable-image.zoomed {
+  transform: scale(1.5); /* Phóng to ảnh 1.5 lần */
+  position: absolute; /* Đặt vị trí tuyệt đối để nổi lên khỏi thành phần cha */
+  top: 50%; /* Căn chỉnh ảnh ở giữa theo chiều dọc */
+  left: 50%; /* Căn chỉnh ảnh ở giữa theo chiều ngang */
+  transform: translate(-50%, -50%) scale(1.5); /* Dịch chuyển ảnh để căn giữa và phóng to */
+  z-index: 1000; /* Đặt z-index cao để hình ảnh nổi lên trên tất cả các phần tử khác */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Thêm hiệu ứng bóng đổ để làm nổi bật ảnh */
+}
