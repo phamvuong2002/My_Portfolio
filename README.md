@@ -84,4 +84,4 @@ You will find all the components used and you can edit your information accordin
 
 Give a ⭐ if you like this website!
 
-<a href="https://buymeacoffee.com/phamvuong" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+<a href="https://www.buymeacoffee.com/phamvuong"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=😍&slug=phamvuong&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
